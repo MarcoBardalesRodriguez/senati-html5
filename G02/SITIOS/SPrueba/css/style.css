@@ -1,6 +1,7 @@
 body{
     /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
-    background-image: linear-gradient( 95deg, #cafff3 25%, #c0e5f6 65% );
+    /* background-image: linear-gradient( 95deg, #cafff3 25%, #c0e5f6 65% ); */
+    background-image: url(imgs/fondo1.jpg);
 }
 h2 {
   color: #333333;
