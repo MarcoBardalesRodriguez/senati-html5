@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Intercambio de imagenes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Stilos -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* #miImagen{
+                rotate: 180deg;
+                width: 300px;
+                height: 400px;
+                border: 5px solid red;
+            } */
+            
+        </style>
+    </head>
+    <body onload="console.log('cargando');">
+        <h1>Foco prendido & apagado</h1>
+        <br>
+        <img id="miImagen" onclick="changeImage()" src="imgs/apagado.jpg" alt="foco">
+        
+        <p>click en el boton(pulsa) para encender / apagar</p>
+
+        <button type="button" onclick="changeImage()">pulsa</button>
+
+        <!-- JavaScript Embebido -->
+        <script type="text/javascript">
+            function changeImage(){
+                console.log('click');
+                var image=document.getElementById('miImagen');
+
+                if (image.src.match('prendido')){
+                    image.src = "imgs/apagado.jpg";
+                }else{
+                    image.src = "imgs/prendido.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>

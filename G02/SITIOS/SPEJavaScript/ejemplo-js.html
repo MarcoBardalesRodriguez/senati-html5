@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Mi primera pagina en JavaScript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Bienvenido a JavaScript</h1>
+
+    <!-- JavaScript Embebido -->
+    <script type="text/javascript">
+      document.writeln("Hola mundo!! <br>");
+      document.writeln("Hello world!! <br>");
+    </script>
+
+    <p id="demo"></p>
+    <button 
+        type="button" 
+        onclick="
+        document.getElementById('demo').innerHTML='Bienvenido a JavaScript.';
+        console.log('Se pulso el boton');
+        alert('Se pulso el boton');"
+    >click aqui</button>
+
+    <p
+        onclick="alert('se pulso en el parrafo')"
+    >pulsa aqui</p>
+  </body>
+</html>

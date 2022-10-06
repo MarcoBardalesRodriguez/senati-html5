@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Drag and Drop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- jquery and jquery-ui -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <ol id="milista">
+            <li>Tumbes</li>
+            <li>Piura</li>
+            <li>Lambayeque</li>
+            <li>La libertad</li>
+            <li>Ancash</li>
+            <li>Lima</li>
+            <li>Ica</li>
+            <li>Arequipa</li>
+            <li>Moquegua</li>
+            <li>Tacna</li>
+        </ol>
+
+        <!-- Js embebido -->
+        <script>
+            $(document).ready(function(){
+                // fuction sortable 
+                $('#milista').sortable({});
+
+                // console.log($('#milista'));
+                // console.log(document.getElementById('milista'));
+            });
+        </script>
+    </body>
+</html>
